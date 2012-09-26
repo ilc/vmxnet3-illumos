@@ -1,0 +1,32 @@
+vmxnet3 driver for Illumos
+
+History:
+
+This driver was nearly committed to the Illumos tree.  It seems to have
+stumbled at the last second and resurrecting it involved finding a
+webrev that was not the final one, though the code looks to have been in
+nearly final condition if not final.
+
+The patchset this work is based on was produced by, Michael Tsymbalyuk.
+
+The initial code was written by VMWare.
+
+Installation:
+
+Make sure your compiler is on your path.
+
+make 
+make install
+
+Enjoy your new driver.
+
+Hints and tips:
+
+VMWare Fusion's internal network seems to have a 1500 MTU between VMs, this
+can cause some real confusion when debugging issues, please set the mtu
+correctly for your application.
+
+Notes:
+
+This project will disappear if Illumos accepts the patches, or VMWare
+releases a stable driver based on this work.
